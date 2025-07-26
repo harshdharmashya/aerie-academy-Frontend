@@ -111,13 +111,13 @@ const Testimonials = () => {
           {/* Left: Video Section */}
           <div className="w-full md:w-1/2 h-[300px] md:h-[500px] overflow-hidden">
             <video
-              ref={videoRef}
+              // ref={videoRef}
               src="/student testimonial.mp4"
               loop
               muted
               playsInline
               controls
-              // poster="/VideoCapture_20250724-210547.jpg"
+              poster="/VideoCapture_20250724-210547.jpg"
               className="w-3/4 h-full object-cover shadow-lg rounded-lg ml-[50px]"
             />
           </div>

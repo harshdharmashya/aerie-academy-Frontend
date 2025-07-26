@@ -1,10 +1,14 @@
 import React, { useState } from 'react';
 import { ChevronDown, ChevronUp } from 'lucide-react';
+import EnquiryModal from './EnquiryModal';
 
 const FAQ = () => {
   // State to track which FAQ item is open
   const [openItem, setOpenItem] = useState(0); // First item open by default
+  const [isModalOpen, setIsModalOpen] = useState(false);
 
+  const openModal = () => setIsModalOpen(true);
+  const closeModal = () => setIsModalOpen(false);
   // FAQ data
   const faqItems = [
     {
@@ -57,42 +61,53 @@ const FAQ = () => {
 
 
   return (
-    <section id='faq' className="pt-[3rem] pb-[4rem] px-6 bg-gray-50">
-      <div className="max-w-3xl mx-auto">
-        <div className="text-center mb-12">
-          <h2 className="text-3xl font-bold text-gray-900 mb-4">Got Questions? We Have Answers</h2>
-          <p className="text-gray-600">Find answers to the most common questions about our GATE preparation courses</p>
-        </div>
+    <>
+      <section id='faq' className="pt-[3rem] pb-[4rem] px-6 bg-gray-50">
+        <div className="max-w-3xl mx-auto">
+          <div className="text-center mb-12">
+            <h2 className="text-3xl font-bold text-gray-900 mb-4">Got Questions? We Have Answers</h2>
+            <p className="text-gray-600">Find answers to the most common questions about our GATE preparation courses</p>
+          </div>
 
-        <div className="space-y-4 mb-10">
-          {faqItems.map((item, index) => (
-            <div 
-              key={index} 
-              className="bg-white border border-gray-200 rounded-lg overflow-hidden shadow-sm"
-            >
-              <button
-                className="w-full text-left px-6 py-4 flex items-center justify-between focus:outline-none"
-                onClick={() => toggleItem(index)}
-                aria-expanded={openItem === index}
+          <div className="space-y-4 mb-10">
+            {faqItems.map((item, index) => (
+              <div
+                key={index}
+                className="bg-white border border-gray-200 rounded-lg overflow-hidden shadow-sm"
               >
-                <span className="font-medium text-gray-900">{item.question}</span>
-                {openItem === index ? (
-                  <ChevronUp className="w-5 h-5 text-gray-500 flex-shrink-0" />
-                ) : (
-                  <ChevronDown className="w-5 h-5 text-gray-500 flex-shrink-0" />
+                <button
+                  className="w-full text-left px-6 py-4 flex items-center justify-between focus:outline-none"
+                  onClick={() => toggleItem(index)}
+                  aria-expanded={openItem === index}
+                >
+                  <span className="font-medium text-gray-900">{item.question}</span>
+                  {openItem === index ? (
+                    <ChevronUp className="w-5 h-5 text-gray-500 flex-shrink-0" />
+                  ) : (
+                    <ChevronDown className="w-5 h-5 text-gray-500 flex-shrink-0" />
+                  )}
+                </button>
+
+                {openItem === index && (
+                  <div className="px-6 pb-4 text-gray-600">
+                    <p>{item.answer}</p>
+                  </div>
                 )}
-              </button>
-              
-              {openItem === index && (
-                <div className="px-6 pb-4 text-gray-600">
-                  <p>{item.answer}</p>
-                </div>
-              )}
-            </div>
-          ))}
+              </div>
+            ))}
+          </div>
         </div>
-      </div>
-    </section>
+        <div className='flex justify-center'>
+          <button
+            onClick={openModal}
+            className="bg-indigo-600 text-white hover:bg-indigo-700 px-8 py-4 rounded-lg font-medium text-lg inline-flex items-center gap-2 transition-colors shadow-lg"
+          >
+            Book Free Demo
+          </button>
+        </div>
+      </section>
+      <EnquiryModal isOpen={isModalOpen} onClose={closeModal} />
+    </>
   );
 };
 

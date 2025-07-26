@@ -49,7 +49,7 @@ export default function About() {
     useEffect(() => {
         const timer = setTimeout(() => {
             openModal()
-        }, 10000);
+        }, 20000);
         return () => clearTimeout(timer); // cleanup if component unmounts
     }, []);
 
@@ -216,10 +216,9 @@ export default function About() {
             </section>
             <Team />
             <PaymentPlans />
-            <Demo />
+            {/* <Demo /> */}
             <Testimonials />
             <FAQ />
-            <Footer />
             <EnquiryModal isOpen={isModalOpen} onClose={closeModal} />
         </>
     )

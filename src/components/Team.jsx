@@ -6,26 +6,50 @@ const Team = () => {
     {
       id: 1,
       image: '/1.png',
+      name1:'Ar. Parul',
+      name2:'Sharma',
+      study1:'IIT',
+      study2:'Kharagpur'
     },
     {
       id: 2,
       image: '/2.png',
+      name1:'Ar. Kanishk',
+      name2:'Sharma',
+      study1:'IIT',
+      study2:'Roorkee'
     },
     {
       id: 3,
       image: '/3.png',
+      name1:'Ar. Riya',
+      name2:'Varshney',
+      study1:'MANIT',
+      study2:'Bhopal'
     },
     {
       id: 4,
       image: '/4.png',
+      name1:'Sidhhant',
+      name2:'Asati',
+      study1:'IIT',
+      study2:'Kharagpur'
     },
     {
       id: 5,
       image: '/5.png',
+      name1:'Ar. Ruchika',
+      name2:'Sharma',
+      study1:'CEPT',
+      study2:''
     },
     {
       id: 6,
       image: '/6.png',
+      name1:'Bhavya',
+      name2:'Ary',
+      study1:'SSC,',
+      study2:'CGL'
     }
   ];
   const settings = {
@@ -79,6 +103,16 @@ const Team = () => {
                       e.target.src = `/api/placeholder/400/400`;
                     }}
                   />
+                  <div className="absolute bottom-0 right-2 w-28 h-28 rounded-full overflow-hidden border-4 border-white shadow-lg">
+                    <div className="bg-white text-center text-xs font-bold pt-2 leading-tight text-black h-1/2">
+                      <div className="mt-1">{teacher.name1}</div>
+                      <div className="text-[11px] font-semibold">{teacher.name2}</div>
+                    </div>
+                    <div className="bg-blue-500 text-white text-center text-sm font-bold py-1 h-1/2 leading-tight">
+                      <div>{teacher.study1}</div>
+                      <div>{teacher.study2}</div>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>

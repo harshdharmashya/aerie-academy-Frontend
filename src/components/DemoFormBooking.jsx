@@ -85,7 +85,7 @@ const DemoBookingForm = () => {
   };
 
   return (
-    <section className="flex justify-center items-center h-[70vh] bg-white text-center px-4 py-5 pb-0 mt-[50px]">
+    <section className="flex justify-center items-center h-[70vh] bg-white text-center px-4 py-5 pb-0 mt-[80px]">
       <div>
         <h2 className="text-black text-2xl sm:text-3xl font-semibold">
           Book Your Free Demo Class Now!
