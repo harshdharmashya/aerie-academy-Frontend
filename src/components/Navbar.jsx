@@ -91,7 +91,7 @@ const Navbar = () => {
               onClick={openModal}
               className="ml-4 inline-flex items-center justify-center px-8 py-3 border border-transparent rounded-md shadow-sm text-base font-medium text-white bg-primary hover:bg-primary/90 transition-all duration-200 hover:shadow-lg hover:-translate-y-0.5"
             >
-              Book a Call
+              Book Free Demo
             </button>
           </div>
 
