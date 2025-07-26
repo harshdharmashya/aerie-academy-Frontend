@@ -95,7 +95,13 @@ const EnquiryModal = ({ isOpen, onClose }) => {
     try {
       const response = await axios.post(
         `https://aerie-academy-backend.vercel.app/api/contact`,
-        formData
+        formData,
+        {
+          headers: {
+            'Content-Type': 'application/json'
+          }
+        }
+      
       );
       console.log(response);
       // Save email to localStorage to identify returning users
