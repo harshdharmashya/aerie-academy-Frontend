@@ -41,7 +41,7 @@ const EnquiryModal = ({ isOpen, onClose }) => {
         if (savedEmail) {
           try {
             const response = await axios.get(
-              `${process.env.REACT_APP_API_URL || 'http://localhost:5000'}/api/contact/check-email?email=${savedEmail}`
+              `https://aerie-academy-backend.vercel.app/api/contact/check-email?email=${savedEmail}`
             );
             if (response.data.exists) {
               setIsExistingUser(true);
@@ -94,7 +94,7 @@ const EnquiryModal = ({ isOpen, onClose }) => {
 
     try {
       const response = await axios.post(
-        `${process.env.REACT_APP_API_URL || 'http://localhost:5000'}/api/contact`,
+        `https://aerie-academy-backend.vercel.app/api/contact`,
         formData
       );
       console.log(response);
