@@ -3,7 +3,6 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Selection from './Selection';
 import Team from './Team';
-import Footer from './Footer';
 import FAQ from './FAQ';
 import EnquiryModal from './EnquiryModal';
 import React, { useState, useEffect, useMemo, useRef } from 'react';
@@ -11,11 +10,10 @@ import { BookOpen, Sparkles, GraduationCap, Clock } from 'lucide-react';
 import { Typewriter } from 'react-simple-typewriter';
 import AOS from "aos";
 import "aos/dist/aos.css";
-import Demo from './Demo';
 import PaymentPlans from './PaymentPlans';
 import Testimonials from './Testimonials';
 import DemoBookingForm from './DemoFormBooking';
-import { linearGradient } from 'framer-motion/client';
+import CallbackBar from './CallBackBar';
 
 export default function About() {
     const videoRef = useRef(null);
@@ -180,6 +178,7 @@ export default function About() {
                     </div>
                 </div>
             </section>
+            <CallbackBar />
             <DemoBookingForm/>
             <Selection />
             <section id='features' className='min-h-screen text-center px-4 py-10 bg-white'>

@@ -15,7 +15,7 @@ import SuccessStories from './components/SuccessStories';
 import FAQ from './components/FAQ';
 import CallToAction from './components/CallToAction';
 import Footer from './components/Footer';
-import About from './components/Home';
+import Home from './components/Home';
 
 // Admin Components
 import AdminLogin from './pages/AdminLogin';
@@ -57,7 +57,7 @@ function App() {
       <Routes>
         {/* Main website route */}
         {/* <Route path="/" element={<MainLayout />} /> */}
-        <Route path="/" element={<About/>} />
+        <Route path="/" element={<Home/>} />
         {/* Admin routes */}
         <Route path="/admin" element={<AdminLogin />} />
         <Route 

@@ -62,7 +62,7 @@ const FAQ = () => {
 
   return (
     <>
-      <section id='faq' className="pt-[3rem] pb-[4rem] px-6 bg-gray-50">
+      <section id='faq' className="pt-[3rem] pb-[4rem] px-6 bg-gray-50 mb-12">
         <div className="max-w-3xl mx-auto">
           <div className="text-center mb-12">
             <h2 className="text-3xl font-bold text-gray-900 mb-4">Got Questions? We Have Answers</h2>
