@@ -30,7 +30,7 @@ const CallbackBar = () => {
         <div className="fixed bottom-0 left-1/2 transform -translate-x-1/2 w-[80%] bg-gradient-to-r from-blue-800 to-blue-400 shadow-lg z-50 text-white py-4 px-4 rounded-tl-md rounded-tr-md">
             <div className="max-w-5xl mx-auto text-center">
                 <h3 className="text-base sm:text-lg font-semibold mb-1">
-                    Get a Callback from our Team
+                    Get a Callback for demo class
                 </h3>
                 <form
                     onSubmit={handleSubmit}
