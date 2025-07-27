@@ -25,9 +25,9 @@ const AdminLogin = () => {
     setError('');
     
     // Hardcoded admin credentials
-    const ADMIN_EMAIL = process.env.ADMIN_EMAIL;
-    const ADMIN_PASSWORD = process.env.ADMIN_PASSWORD;
-    
+    const ADMIN_EMAIL = 'aerieacademy@gmail.com';
+    const ADMIN_PASSWORD = 'admin123';
+
     // Simple validation
     if (!credentials.email || !credentials.password) {
       setError('Please enter both email and password');
