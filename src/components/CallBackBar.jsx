@@ -49,7 +49,7 @@ const CallbackBar = () => {
                         type="submit"
                         className="px-5 py-1 bg-blue-300 text-blue-900 hover:bg-blue-200 font-semibold rounded-r-md transition"
                     >
-                        {loading ? 'Sending...' : 'Get a Call Back'}
+                        {loading ? 'Sending...' : 'BOOK FREE DEMO'}
                     </button>
                 </form>
                 {successMsg && (

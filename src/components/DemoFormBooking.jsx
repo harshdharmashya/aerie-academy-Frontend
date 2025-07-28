@@ -123,7 +123,6 @@ const DemoBookingForm = () => {
               <p className="text-sm text-red-500 mt-1">{validationMsg.phone}</p>
             )}
           </div>
-
           <div>
             <input
               type="text"
@@ -139,7 +138,6 @@ const DemoBookingForm = () => {
               <p className="text-sm text-red-500 mt-1">{validationMsg.email}</p>
             )}
           </div>
-
           <button
             type="submit"
             disabled={isSubmitting}
