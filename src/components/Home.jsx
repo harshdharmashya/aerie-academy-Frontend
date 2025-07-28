@@ -99,7 +99,7 @@ export default function About() {
     return (
         <>
             <Navbar />
-            <section style={{background: "linear-gradient(to right, #0f172a, #4d71c5)"}} className="min-h-screen md:h-[110vh] flex justify-center items-center px-5 sm:px-10 text-center relative py-10">
+            <section style={{ background: "linear-gradient(to right, #0f172a, #4d71c5)" }} className="min-h-screen md:h-[110vh] flex justify-center items-center px-5 sm:px-10 text-center relative py-10">
                 <div className="w-full max-w-6xl flex flex-col md:flex-row gap-10">
                     {/* Left Text Section */}
                     <div className="flex-1 w-full md:w-1/2 md:mt-[40px]">
@@ -131,7 +131,7 @@ export default function About() {
                             onClick={openModal}
                             className="bg-indigo-600 text-white hover:bg-indigo-700 px-6 py-3 rounded-full mt-6 font-medium text-base sm:text-lg inline-flex items-center gap-2 transition-colors shadow-lg"
                         >
-                            Book free demo
+                            BOOK FREE DEMO
                         </button>
                     </div>
 
@@ -179,7 +179,7 @@ export default function About() {
                 </div>
             </section>
             <CallbackBar />
-            <DemoBookingForm/>
+            <DemoBookingForm />
             <Selection />
             <section id='features' className='min-h-screen text-center px-4 py-10 bg-white'>
                 <div className="mb-8">
@@ -208,9 +208,7 @@ export default function About() {
                     onClick={openModal}
                     className="bg-indigo-600 text-white hover:bg-indigo-700 px-8 py-4 rounded-lg font-medium text-lg inline-flex items-center gap-2 transition-colors shadow-lg"
                 >
-
-                    Book Free Demo
-
+                    BOOK FREE DEMO
                 </button>
             </section>
             <Team />
