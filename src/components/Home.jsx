@@ -178,7 +178,7 @@ export default function About() {
                     </div>
                 </div>
             </section>
-            <CallbackBar />
+            <CallbackBar openModal={openModal} closeModal={closeModal}/>
             <DemoBookingForm />
             <Selection />
             <section id='features' className='min-h-screen text-center px-4 py-10 bg-white'>
